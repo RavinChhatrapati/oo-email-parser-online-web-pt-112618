@@ -13,6 +13,6 @@ def parse
     csvemails.split.collect do |address|
       address.split(',')
     end
-.flatten.uniq
+.flatten.uniq  # converts from multidimensional to one dimensional array with .flatten while also removing same emails with .uniq
   end
 end
